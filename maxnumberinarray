@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int m ;
+    cout<<"enter the size of arrya: ";
+    cin>>m;
+    int array[m];
+    for(int i=0;i<m;i++)
+    {
+        cin>>array[i];
+    }
+    
+    int maxNo =INT_MIN;
+    int minNO= INT_MAX;
+    for(int i=0;i<m;i++)
+    {
+        maxNo=max(maxNo,array[i]);
+        minNO =min(minNO,array[i]);
+    }
+    cout<<"max number"<<maxNo<<endl;
+    cout<<"min number"<<minNO<<endl;
+    return 0;
+}
